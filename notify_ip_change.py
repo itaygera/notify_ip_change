@@ -17,8 +17,8 @@ def send_mail(my_ip):
     msg['To'] = send_to
 
     # Send the message via our own SMTP server.
-    s = smtplib.SMTP('localhost')
-    s.send_message(msg)
+    s = smtplib.SMTP('localhost:8025')
+    s.send_message(msg=msg)
     s.quit()
 
 
