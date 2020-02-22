@@ -21,6 +21,7 @@ def send_mail(my_ip):
     s = smtplib.SMTP('localhost:8025')
     print(f'Sending email to {send_to}, from {send_from}')
     s.send_message(msg=msg)
+    print('Finish sending')
     s.quit()
 
 
